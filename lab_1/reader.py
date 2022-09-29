@@ -12,8 +12,8 @@ class TrainingData:
 
 class DataReader:
     def __init__(self) -> None:
-        self.train_file = 'training_data.json'
-        self.test_file = 'test_data.json'
+        self.train_file = './lab_1/training_data.json'
+        self.test_file = './lab_1/test_data.json'
 
     def get_train_data(self) -> List[TrainingData]:
         return self.__get_data(self.train_file)

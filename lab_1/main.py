@@ -3,7 +3,7 @@ from random import shuffle
 from layer import Layer
 from reader import DataReader
 
-NU = 000.1  # learning_rate - это скорость обучения
+NU = 000.1  # это скорость обучения
 H = 0.7
 
 
@@ -13,7 +13,7 @@ def main():
     size = len(train_data[0].data)
 
     layer = Layer(size=size, h=H)
-    layer.train(train_data=train_data, epochs=3, nu=NU)
+    layer.train(train_data=train_data, epochs=30, nu=NU)
 
     print('THE END OF TRAINING\n')
     print('PREDICTIONS:')
